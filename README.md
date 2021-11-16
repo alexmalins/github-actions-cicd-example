@@ -1,2 +1,3 @@
-# actions-ci-test
-Testing GitHub Actions, CI and coverage reports...
+# actionsci
+
+Test CI and automated code coverage reports using GitHub Actions.
