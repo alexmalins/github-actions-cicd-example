@@ -13,7 +13,7 @@ class TestSomeCode(unittest.TestCase):
 
         vec1 = np.array([1, 2])
         vec2 = np.array([3, 4])
-        self.assertTrue((add_vectors(vec1, vec2) == np.array([4, 5])).all())
+        self.assertTrue((add_vectors(vec1, vec2) == np.array([4, 6])).all())
 
     def test_load_datafile(self) -> None:
         """Test loading of people's names and ages from TSV file"""
