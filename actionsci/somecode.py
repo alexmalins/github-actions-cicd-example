@@ -32,3 +32,6 @@ def load_datafile(filename: str) -> Tuple[List[str], List[int]]:
             ages.append(int(lineentries[1]))
 
     return (names, ages)
+
+def unused_fn() -> None:
+    return
