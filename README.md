@@ -1,3 +1,7 @@
+[![Tests](https://github.com/alexmalins/actionsci/actions/workflows/tests.yml/badge.svg)](https://github.com/alexmalins/actionsci/actions/workflows/tests.yml)
+[![Test Coverage](https://codecov.io/gh/alexmalins/actionsci/branch/master/graph/badge.svg)](https://codecov.io/gh/alexmalins/actionsci/)
+
+
 # Example repo: using GitHub Actions for automated testing & code coverage
 
 This is a minimal Python repo demonstrating the use of GitHub Actions for
