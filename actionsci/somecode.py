@@ -1,19 +1,24 @@
+"""Some basic Python code for adding two NumPy vectors and loading data from a
+sub-packaged TSV file."""
+
 from typing import List, Tuple
 import numpy as np
 
 try:
     from importlib import resources
 except ImportError:
-    import importlib_resources as resources
+    import importlib_resources as resources  # type:ignore
 
-def add_vectors(a: np.ndarray, b: np.ndarray) -> np.ndarray:
-    """ Adds two numpy vectors """
-    
-    return a + b
+
+def add_vectors(vec1: np.ndarray, vec2: np.ndarray) -> np.ndarray:
+    """Adds two numpy vectors"""
+
+    result: np.ndarray = vec1 + vec2
+    return result
 
 
 def load_datafile(filename: str) -> Tuple[List[str], List[int]]:
-    """ Loads people's names and ages from a TSV file """
+    """Loads people's names and ages from a TSV file"""
 
     names = []
     ages = []
