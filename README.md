@@ -1,7 +1,7 @@
-# Using GitHub Actions for Python automated testing & code coverage
+# Example repo: using GitHub Actions for automated testing & code coverage
 
 This is a minimal Python repo demonstrating the use of GitHub Actions for
-automated testing & code coverage.
+automated testing & generating code coverage reports.
 
 Testing is with `unittest` from Python's standard library.
 
