@@ -1,5 +1,5 @@
 [![Tests](https://github.com/alexmalins/actionsci/actions/workflows/tests.yml/badge.svg)](https://github.com/alexmalins/actionsci/actions/workflows/tests.yml)
-[![Test Coverage](https://codecov.io/gh/alexmalins/actionsci/branch/master/graph/badge.svg)](https://codecov.io/gh/alexmalins/actionsci/)
+[![codecov](https://codecov.io/gh/alexmalins/actionsci/branch/main/graph/badge.svg?token=EXFQHNBA9Z)](https://codecov.io/gh/alexmalins/actionsci)
 
 
 # Example repo: using GitHub Actions for automated testing & code coverage
@@ -13,7 +13,11 @@ Code coverage reports are generated using
 [coverage.py](https://github.com/nedbat/coveragepy) and uploaded automatically
 to [codecov](https://about.codecov.io/).
 
-Useful resources on the topic:
+## File system structure
+
+TBA...
+
+## Useful resources on the topic
 
 - mCoding's [YouTube video](https://www.youtube.com/watch?v=DhUpxWjOhME) on
 using GitHub actions for automated testing (see also the

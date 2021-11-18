@@ -1,1 +1,2 @@
 numpy
+importlib_resources; python_version<'3.7'
