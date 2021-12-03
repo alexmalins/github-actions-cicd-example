@@ -12,12 +12,17 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
+        os: [ubuntu-latest]
         python-version: ['3.6', '3.7', '3.8', '3.9', '3.10']
+        include:
+          - os: windows-latest
+            python-version: '3.6'
+          - os: macos-latest
+            python-version: '3.6'
     timeout-minutes: 10
 
     steps:
-    - name: Check out repository code
+    - name: Check out code repository
       uses: actions/checkout@v2
 
     - name: Set up Python ${{ matrix.python-version }}
