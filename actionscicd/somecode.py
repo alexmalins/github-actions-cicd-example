@@ -10,8 +10,8 @@ except ImportError:
     import importlib_resources as resources  # type:ignore
 
 
-def add_vectors(vec1: np.ndarray, vec2: np.ndarray) -> np.ndarray:
-    """Adds two numpy vectors"""
+def add_arrays(vec1: np.ndarray, vec2: np.ndarray) -> np.ndarray:
+    """Adds two numpy arrays"""
 
     result: np.ndarray = vec1 + vec2
     return result
@@ -33,5 +33,8 @@ def load_datafile(filename: str) -> Tuple[List[str], List[int]]:
 
     return (names, ages)
 
+
 def unused_fn() -> None:
+    """Unused dummy function to give an example of code not covered by tests"""
+
     return
