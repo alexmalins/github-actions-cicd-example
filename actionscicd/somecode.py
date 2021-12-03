@@ -1,4 +1,4 @@
-"""Some basic Python code for adding two NumPy vectors and loading data from a
+"""Some basic Python code for adding two NumPy arrays and loading data from a
 sub-packaged TSV file."""
 
 from typing import List, Tuple
@@ -10,10 +10,10 @@ except ImportError:
     import importlib_resources as resources  # type:ignore
 
 
-def add_arrays(vec1: np.ndarray, vec2: np.ndarray) -> np.ndarray:
+def add_arrays(arr1: np.ndarray, arr2: np.ndarray) -> np.ndarray:
     """Adds two numpy arrays"""
 
-    result: np.ndarray = vec1 + vec2
+    result: np.ndarray = arr1 + arr2
     return result
 
 
