@@ -1,4 +1,4 @@
-name: Check docs build
+name: Docs build
 
 on:
   push:

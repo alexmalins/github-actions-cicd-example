@@ -1,14 +1,9 @@
 """Some basic Python code for adding two NumPy arrays and loading data from a
 sub-packaged TSV file."""
 
+from importlib import resources
 from typing import Any, List, Tuple
-import numpy as np
 import numpy.typing as npt
-
-try:
-    from importlib import resources
-except ImportError:
-    import importlib_resources as resources  # type:ignore
 
 
 def add_arrays(arr1: npt.NDArray[Any], arr2: npt.NDArray[Any]) -> npt.NDArray[Any]:
