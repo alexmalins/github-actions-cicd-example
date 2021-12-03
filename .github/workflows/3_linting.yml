@@ -36,13 +36,13 @@ jobs:
 
     - name: Lint with pylint
       run: |
-      pylint actionscicd
-      pylint tests
+        pylint actionscicd
+        pylint tests
 
     - name: Run Black check
       uses: psf/black@stable
 
     - name: Check type hints with mypy
       run: |
-      mypy --strict actionscicd
-      mypy --strict tests
+        mypy --strict actionscicd
+        mypy --strict tests
