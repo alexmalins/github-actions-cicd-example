@@ -49,7 +49,7 @@ jobs:
 
     - name: Push docs
       run: |
-        cp -RT  github-actions-cicd-example/docs/build/html alexmalins.github.io/doc/github-actions-cicd-example
+        cp -RT  github-actions-cicd-example/docs/build/html alexmalins.github.io/docs/github-actions-cicd-example
         cd alexmalins.github.io
         git config --local user.name "github-actions[bot]"
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
