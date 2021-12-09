@@ -6,32 +6,43 @@
 [![Latest Documentation](https://img.shields.io/badge/docs-latest-brightgreen)](https://alexmalins.github.io/github-actions-cicd-example)
 
 
-# Example repo: using GitHub Actions for Python Project CI/CD
+# Example repo: using GitHub Actions for CI/CD  for a Python project
 
-This is a minimal repo demonstrating the use of GitHub Actions for CI/CD on a
-Python project.
+This is a minimal repo demonstrating the use of GitHub Actions for Continuous
+Integration (CI) & Continous Deployment (CD) for a Python project.
 
-The workflows are:
+The GitHub Actions are:
 
-1. Automated testing using `unittest` from Python's standard library.
-2. Generate code coverage reports using
+1. **Tests:** Automatically unit test code using `unittest` from Python's
+standard library.
+2. **Code coverage:** Generate code coverage reports using
 [coverage.py](https://github.com/nedbat/coveragepy). The reports are
 automatically uploaded to [codecov](https://about.codecov.io/). The
 @codecov-commenter bot adds a comment to PR on code coverage status.
-3.  Lint using [pylint](https://www.pylint.org/). Check code formatting using
+3.  **Lint and format code:** Lint using [pylint](https://www.pylint.org/). Check code formatting using
 [black](https://github.com/psf/black). Check type hints using
 [mypy](http://mypy-lang.org/).
-4. Check [Sphinx](https://www.sphinx-doc.org) docs build successfully.
-5. Automatically deploy docs to a [GitHub Pages repo]()  upon merges to `main`
-branch (COMING SOON).
-6. Upload package to [PyPI](https://pypi.org/) when a new release is created on
-GitHub (COMING SOON).
+4. **Check docs build:** Check [Sphinx](https://www.sphinx-doc.org) docs build successfully.
+5. **Deploy docs to GitHub pages:** Automatically deploy docs to a
+[GitHub Pages repo](https://github.com/alexmalins/alexmalins.github.io)  upon
+merges to `main` branch.
+6. **Upload release to PyPI:** Publish the latest version of the package on
+[PyPI](https://pypi.org/) when a new GitHub Release is created (COMING SOON).
 
-
+Each of these actions is stored in a YAML file in the
+[.github/workflows](https://github.com/alexmalins/github-actions-cicd-example/tree/main/.github/workflows)
+directory. 
 
 ## File system structure
 
 TBA...
+
+## Push Token for Deploying Docs
+
+Action #5 requires setting up a Personal Access Token with full repo access via
+the Developer Settings page. Store this token as an Actions secret under the
+name `PUSH_TOKEN` in the main repo (i.e. the repo where the docs source code is
+held). See more [here](https://stackoverflow.com/questions/65997950/how-let-github-actions-workflow-push-generated-documentation-to-other-repository).
 
 ## Useful resources on the topic
 
