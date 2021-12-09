@@ -21,13 +21,13 @@ jobs:
     - name: Check out code repository
       uses: actions/checkout@v2
       with:
-        path: radioactivedecay
+        path:  github-actions-cicd-example
 
     - name: Check out docs repository
       uses: actions/checkout@v2
       with:
-        repository: radioactivedecay/radioactivedecay.github.io
-        path: radioactivedecay.github.io
+        repository: alexmalins/alexmalins.github.io
+        path: alexmalins.github.io
         token: ${{secrets.PUSH_TOKEN}}
 
     - name: Set up Python ${{ matrix.python-version }}
@@ -37,24 +37,25 @@ jobs:
 
     - name: Install dependencies
       run: |
+        cd  github-actions-cicd-example
         python -m pip install --upgrade pip
         pip install -r requirements.txt
         pip install -r requirements_docs.txt
 
     - name: Build docs
       run: |
-        cd radioactivedecay/docs
+        cd github-actions-cicd-example/docs
         make html
 
     - name: Push docs
       run: |
-        cp -RT radioactivedecay/docs/build/html radioactivedecay.github.io/latest/
-        cd radioactivedecay.github.io
+        cp -RT  github-actions-cicd-example/docs/build/html alexmalins.github.io/doc/github-actions-cicd-example
+        cd alexmalins.github.io
         git config --local user.name "github-actions[bot]"
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git add -A
         git commit -m "Documentation update"
-        git push https:://$USERNAME:$REPO_KEY@github.com/radioactivedecay/radioactivedecay.github.io.git
+        git push https:://$USERNAME:$REPO_KEY@github.com/alexmalins/alexmalins.github.io.git
       env:
         REPO_KEY: ${{secrets.PUSH_TOKEN}}
         USERNAME: github-actions[bot]
