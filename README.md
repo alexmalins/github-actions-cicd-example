@@ -27,7 +27,7 @@ automatically uploaded to [codecov](https://about.codecov.io/). The
 [GitHub Pages repo](https://github.com/alexmalins/alexmalins.github.io)  upon
 merges to `main` branch.
 6. **Upload release to PyPI:** Publish the latest version of the package on
-[PyPI](https://pypi.org/) when a new GitHub Release is created (COMING SOON).
+[PyPI](https://pypi.org/) when a new GitHub Release is created.
 
 Each of these actions is stored in a YAML file in the
 [.github/workflows](https://github.com/alexmalins/github-actions-cicd-example/tree/main/.github/workflows)
@@ -49,7 +49,7 @@ held). See more [here](https://stackoverflow.com/questions/65997950/how-let-gith
 - mCoding's [YouTube video](https://www.youtube.com/watch?v=DhUpxWjOhME) on
 using GitHub actions for automated testing (see associated
 [code repo](https://github.com/mCodingLLC/SlapThatLikeButton-TestingStarterProject)).
-- Alex Damiani's YouTube videos on the same topic
+- Alex Damiani's YouTube videos on automated testing
 [[1](https://www.youtube.com/watch?v=oi94qEvi9Qo)],
 [[2](https://www.youtube.com/watch?v=rY-igT2N8zU)] &
 [[3](https://www.youtube.com/watch?v=OOZtW3iF0is)] and associated code repos:
@@ -58,3 +58,8 @@ using GitHub actions for automated testing (see associated
 [[3](https://github.com/alexanderdamiani/pytester_test_repo)].
 - [librosa](https://github.com/librosa/librosa) is a real-world example of
 `pyproject.toml`, `setup.cfg` & `setup.py` working together.
+- [Pharmpy](https://github.com/pharmpy/pharmpy) uses Actions for building docs
+then deploying them to a separate GitHub Pages repo.
+- Vinod Kurup's
+[blog post](https://www.caktusgroup.com/blog/2021/02/11/automating-pypi-releases/)
+on automating PyPI releases with GitHub Actions.
