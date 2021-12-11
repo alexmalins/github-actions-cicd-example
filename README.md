@@ -1,8 +1,8 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](https://github.com/alexmalins/github-actions-cicd-example/blob/main/LICENSE)
 [![Tests](https://github.com/alexmalins/github-actions-cicd-example/actions/workflows/1_tests.yml/badge.svg)](https://github.com/alexmalins/github-actions-cicd-example/actions/workflows/1_tests.yml)
 [![codecov](https://codecov.io/gh/alexmalins/github-actions-cicd-example/branch/main/graph/badge.svg?token=EXFQHNBA9Z)](https://codecov.io/gh/alexmalins/github-actions-cicd-example)
-[![Code Style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![Checked with mypy](https://img.shields.io/badge/mypy-checked-blue)](http://mypy-lang.org/)
+[![Code Style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/alexmalins/github-actions-cicd-example/actions/workflows/3_linting.yml)
+[![Checked with mypy](https://img.shields.io/badge/mypy-checked-blue)](https://github.com/alexmalins/github-actions-cicd-example/actions/workflows/3_linting.yml)
 [![Latest Documentation](https://img.shields.io/badge/docs-latest-brightgreen)](https://alexmalins.github.io/github-actions-cicd-example)
 
 
